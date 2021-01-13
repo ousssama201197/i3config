@@ -46,7 +46,7 @@ bindsym $mod+Shift+A kill
 bindsym $mod+Arabic_beh exec setxkbmap fr
 bindsym $mod+Tab exec setxkbmap ar
 bindsym --release Pause exec ./home/oussama_arch/filesWashere/susp
-bindsym --release Print exec scrot -s
+bindsym --release Print exec scrot -s  '/home/oussama_arch/screenshots/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 bindsym XF86Mail exec brave --app="https://gmail.com"
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 10%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 10%-
