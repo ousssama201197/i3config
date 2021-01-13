@@ -45,7 +45,7 @@ bindsym $mod+i exec nemo
 bindsym $mod+Shift+A kill
 bindsym $mod+Arabic_beh exec setxkbmap fr
 bindsym $mod+Tab exec setxkbmap ar
-bindsym $mod+s exec ./filesWashere/susp
+bindsym $mod+s exec .home/oussama_arch/filesWashere/susp
 
 bindsym XF86Mail exec brave --app="https://gmail.com"
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 10%+
