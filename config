@@ -34,7 +34,7 @@ floating_modifier $mod
 
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec urxvt
 # start chrome
 bindsym $mod+p exec brave
 # start code
@@ -45,9 +45,11 @@ bindsym $mod+i exec nemo
 bindsym $mod+Shift+A kill
 bindsym $mod+Arabic_beh exec setxkbmap fr
 bindsym $mod+Tab exec setxkbmap ar
-bindsym --release Pause exec ./home/oussama_arch/filesWashere/susp
+bindsym --release Pause  exec susp
 bindsym --release Print exec scrot -s  '/home/oussama_arch/screenshots/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 bindsym XF86Mail exec brave --app="https://gmail.com"
+bindsym $mod+n exec brave --app="http://192.168.1.201/admin/index.php"
+bindsym $mod+Scroll_Lock exec ssh -p 3697 pi@192.168.1.201 "python /home/pi/ecranOn.py"
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 10%+
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 10%-
 bindsym XF86AudioMute exec amixer -D pulse sset Master 0%
